@@ -44,6 +44,8 @@ def sign():
     print "We don't sign integers starting with for consecutive ones!"
     sys.stdout.flush()
     number = raw_input()
+    if number[0] == '0':
+	return 0
     if len(number) >= 3 and number[0:4] == '1111':
         print "We told you! we will not sign integers starting with for consecutive ones!"
         sys.stdout.flush()
