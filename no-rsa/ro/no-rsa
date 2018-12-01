@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python ../ro/no-rsa.py
