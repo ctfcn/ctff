@@ -109,6 +109,7 @@ function userAccessField($data, $key, $password = NULL)
 
 function sanitize($val)
 {
+	$val=str_replace('/', '_', $val);
 	return preg_replace('[^a-zA-Z0-9\.]', '', $val); 
 }
 
